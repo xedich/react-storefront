@@ -13,11 +13,11 @@ export function RichText({ jsonStringData }: RichTextProps) {
   try {
     data = JSON.parse(jsonStringData);
   } catch (e) {
-    console.error("Rich text data are not valid JSONString.");
+    console.debug("Rich text data are not valid JSONString.");
     return null;
   }
   if (!data.time || !data.version || !data.blocks.length) {
-    console.error("Rich text data not in the EditorJS format.");
+    console.debug("Rich text data not in the EditorJS format.");
     return null;
   }
   return (

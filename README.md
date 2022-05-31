@@ -183,6 +183,8 @@ or, configure it directly in the respective cloud provider.
 
 ### Heroku
 
+[Deploy to Heroku](https://heroku.com/deploy)
+
 For Heroku, you need to specify a LTS version of Node.js in your `package.json` explicitly. Add the following snippet in `package.json`:
 
 ```json
